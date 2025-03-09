@@ -367,15 +367,15 @@ img {
   margin-bottom: 50px;
 }
 
-.testimonials-row {
-  display: flex;
+.interests-row {
+  display: block;
 }
 
-.testimonials-content {
+.interests-content {
   margin-right: 20px;
 }
 
-.testimonials-text {
+.interests-text {
   background: var(--background-dark-95);
   padding: 20px;
   margin-left: 50px;
@@ -384,7 +384,7 @@ img {
   border: 1px solid var(--background-dark-70);
 }
 
-.testimonials-author {
+.interests-image {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
