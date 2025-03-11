@@ -435,21 +435,62 @@
 -->
     </section>
 
-    <!-- portfolio section structure -->
+    <!-- portfolio section structure --
     <section class="portfolio page">
       <h1 class="section-heading">Portfolio</h1>
       <h4 class="section-sub-heading">My Gallery</h4>
 
       <ul class="filter-box">
-        <li class="filter-item active">All</li>
-        <li class="filter-item">Myself</li>
+        <li class="filter-item">It's Me</li>
         <li class="filter-item">Sky's & Clouds</li>
-        <li class="filter-item">Flowers</li>
+        <li class="filter-item">Flowers & Random Clicks</li>
         <li class="filter-item">3d Art's & Graphic Designs</li>
         <li class="filter-item">Video Editings & Other</li>
       </ul>
+-->
+<section class="portfolio page">
+  <h1 class="section-heading">Portfolio</h1>
+  <h4 class="section-sub-heading">My Gallery</h4>
 
+  <!-- Filter Buttons -->
+  <ul class="filter-box">
+    <li class="filter-item active" data-filter="all">All</li>
+    <li class="filter-item" data-filter="myself">It's Me</li>
+    <li class="filter-item" data-filter="sky">Sky & Clouds</li>
+    <li class="filter-item" data-filter="flowers">Flowers & Other Clicks </li>
+    <li class="filter-item" data-filter="3d-art">3D Art & Graphic Designs</li>
+    <li class="filter-item" data-filter="video-edit">Video Editing & Other</li>
+  </ul>
 
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+    <div class="portfolio-item" data-category="myself">
+      <img src="./assets/images/A1.jpg" alt="Myself">
+      <h4 class="item-name">Self Portrait</h4>
+    </div>
+
+    <div class="portfolio-item" data-category="sky">
+      <img src="./assets/images/A2.jpg" alt="Sky & Clouds">
+      <h4 class="item-name">Sunset Sky</h4>
+    </div>
+
+    <div class="portfolio-item" data-category="flowers">
+      <img src="./assets/images/A3.jpg" alt="Flowers">
+      <h4 class="item-name">Blooming Rose</h4>
+    </div>
+
+    <div class="portfolio-item" data-category="3d-art">
+      <img src="./assets/images/A4.jpg" alt="3D Art">
+      <h4 class="item-name">3D Artwork</h4>
+    </div>
+
+    <div class="portfolio-item" data-category="video-edit">
+      <img src="./assets/images/A5.jpg" alt="Video Editing">
+      <h4 class="item-name">Editing Project</h4>
+    </div>
+  </div>
+</section>
+<!--
       <div class="portfolio-items-group">
 
         <div class="portfolio-item active">
