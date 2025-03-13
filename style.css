@@ -560,15 +560,15 @@ img {
   color: var(--color-white-100);
 }
 
+
 .portfolio .portfolio-items-group {
   display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
-    gap: 15px;
-  grid-gap: 30px;
-
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, auto); /* Creates exactly 3 rows */
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
   width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
 }
 
 .portfolio .portfolio-item {

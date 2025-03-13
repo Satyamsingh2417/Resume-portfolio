@@ -99,20 +99,3 @@ filterItems.forEach(item => {
     });
   });
 });
-
-
-
-      const galleryContainer = document.getElementById("gallery-container");
-
-      images.forEach((url) => {
-        const item = document.createElement("div");
-        item.classList.add("gallery-item");
-
-        const img = document.createElement("img");
-        img.src = url;
-        img.alt = "Photo by Satyam Singh";
-        img.loading = "lazy"; // Performance optimization
-
-        item.appendChild(img);
-        galleryContainer.appendChild(item);
-      });
