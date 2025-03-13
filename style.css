@@ -561,14 +561,21 @@ img {
 }
 
 
+
 .portfolio .portfolio-items-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(3, auto); /* Creates exactly 3 rows */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Each item is at least 300px */
+  grid-template-rows: repeat(3, 1fr); /* Creates exactly 3 rows */
   gap: 20px;
   max-width: 1200px;
   margin: auto;
   width: 90%;
+}
+
+.portfolio .portfolio-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures image fits well */
 }
 
 .portfolio .portfolio-item {
