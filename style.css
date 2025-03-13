@@ -525,6 +525,16 @@ img {
 }
 
 /* portfolio section structure style */
+
+
+.portfolio-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
 .filter-box {
   display: flex;
   justify-content: flex-end;

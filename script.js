@@ -47,34 +47,8 @@ for (let i = 0; i < navItemLinks.length; i++) {
   });
 }
 
-// added eventListener in filter buttons
-for (let i = 0; i < filterBtn.length; i++) {
-  filterBtn[i].addEventListener('click', function(){
 
-    // remove all active class from filter button
-    for (let i = 0; i < filterBtn.length; i++) {
-      filterBtn[i].classList.remove('active');
-    }
-    // added active class on filter button clicked
-    this.classList.add('active');
 
-    // show item, based on filter button click
-    for (let i = 0; i < itemCategory.length; i++) {
-      const itemCategoryText = itemCategory[i].textContent;
-      console.log(itemCategoryText);
-      switch (this.textContent) {
-        case itemCategoryText:
-          itemCategory[i].parentElement.classList.add('active');
-          break;
-        case 'All':
-          itemCategory[i].parentElement.classList.add('active');
-          break;
-        default:
-          itemCategory[i].parentElement.classList.remove('active');
-      }
-    }
-  });
-}
 
 
 
@@ -85,26 +59,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const filterItems = document.querySelectorAll(".filter-item");
   const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-  filterItems.forEach((filter) => {
-    filter.addEventListener("click", function () {
-      // Remove active class from all filters
-      document.querySelector(".filter-item.active").classList.remove("active");
+  filterItems.forEach(item => {
+    item.addEventListener("click", function () {
+      // Remove active class from all buttons
+      filterItems.forEach(btn => btn.classList.remove("active"));
       this.classList.add("active");
 
-      const filterValue = this.getAttribute("data-filter");
+      const filter = this.getAttribute("data-filter");
 
-      portfolioItems.forEach((item) => {
-        const category = item.getAttribute("data-category");
-
-        if (filterValue === "all" || category === filterValue) {
-          item.classList.add("show");
+      portfolioItems.forEach(portfolioItem => {
+        if (filter === "all" || portfolioItem.getAttribute("data-category") === filter) {
+          portfolioItem.style.display = "block";
         } else {
-          item.classList.remove("show");
+          portfolioItem.style.display = "none";
         }
       });
     });
   });
-
-  // Show all items by default
-  document.querySelector(".filter-item.active").click();
 });
