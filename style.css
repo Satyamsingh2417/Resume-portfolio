@@ -575,20 +575,7 @@ img {
 }
 
 /* Portfolio Items */
-.portfolio .portfolio-item {
-  position: relative;
-  overflow: hidden;
-  display: none; /* Hidden by default, only shown when active */
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
 
-.portfolio .portfolio-item.active {
-  display: block;
-  opacity: 1;
-  transform: scale(1);
-}
 
 /* Portfolio Images - Adjusted Size */
 .portfolio .portfolio-item img {
