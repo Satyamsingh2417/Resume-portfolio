@@ -453,9 +453,13 @@
 
       <!-- Portfolio Grid -->
             
-  
+          
       <div class="portfolio-grid">
         <div class="portfolio-item" data-category="myself">
+
+        </div>
+      </div>
+            <!--
           <img src="./assets/images/me.jpg" alt="Myself">
           <div class="portfolio-item" data-category="myself">
           <img src="./assets/images/me1.jpg" alt="Myself">
@@ -502,6 +506,44 @@
           <h4 class="item-name">Editing Project</h4>
         </div>
       </div>
+
+            -->
+
+
+<script>
+      const images = [
+        "Img Gallery/20241011_164811.jpg",
+        "Img Gallery/20240818_185513.jpg",
+        "Img Gallery/20240922_054316.jpg",
+        "Img Gallery/20241013_171356.jpg",
+        "Img Gallery/20241025_174321.jpg",
+        "Img Gallery/20240825_170208.jpg",
+        "Img Gallery/20241016_062430.jpg",
+        "Img Gallery/20241022_103128.jpg",
+        "Img Gallery/20241112_084847.jpg",
+        "Img Gallery/20240915_182837.jpg",
+        "Img Gallery/20241015_064859.jpg",
+        "Img Gallery/20241204_212649.jpg",
+        // Add full URLs or correct paths here
+      ];
+
+      const galleryContainer = document.getElementById("gallery-container");
+
+      images.forEach((url) => {
+        const item = document.createElement("div");
+        item.classList.add("gallery-item");
+
+        const img = document.createElement("img");
+        img.src = url;
+        img.alt = "Photo by Satyam Singh";
+        img.loading = "lazy"; // Performance optimization
+
+        item.appendChild(img);
+        galleryContainer.appendChild(item);
+      });
+</script>
+
+            
           </section>
 
 
