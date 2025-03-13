@@ -77,3 +77,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+const filterItems = document.querySelectorAll(".filter-item");
+const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+filterItems.forEach(item => {
+  item.addEventListener("click", function () {
+    document.querySelector(".filter-item.active").classList.remove("active");
+    this.classList.add("active");
+
+    const filterValue = this.getAttribute("data-filter");
+
+    portfolioItems.forEach(portfolioItem => {
+      if (filterValue === "all" || portfolioItem.getAttribute("data-category") === filterValue) {
+        portfolioItem.style.display = "block";
+      } else {
+        portfolioItem.style.display = "none";
+      }
+    });
+  });
+});
