@@ -562,8 +562,13 @@ img {
 
 .portfolio .portfolio-items-group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 15px;
   grid-gap: 30px;
+
+  width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 .portfolio .portfolio-item {
