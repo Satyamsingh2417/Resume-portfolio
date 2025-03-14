@@ -565,8 +565,8 @@ img {
 /* Portfolio Grid - Fixed 3 Rows, Auto Columns */
 .portfolio .portfolio-items-group {
   display: grid;
-  grid-template-rows: repeat(3, auto); /* Exactly 3 rows */
-  grid-auto-flow: column; /* Auto-columns based on content */
+  grid-template-columns: repeat(auto , 3); /* Exactly 3 rows */
+  grid-auto-flow: rows; /* Auto-columns based on content */
   gap: 10px;
   max-width: 1200px;
   margin: auto;
