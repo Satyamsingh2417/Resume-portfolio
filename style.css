@@ -565,12 +565,14 @@ img {
 /* Portfolio Grid - Fixed 3 Rows, Auto Columns */
 .portfolio .portfolio-items-group {
   display: grid;
-  grid-template-columns: repeat(auto , 3); /* Exactly 3 rows */
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 15px;  /* Exactly 3 rows */
   grid-auto-flow: rows; /* Auto-columns based on content */
-  gap: 10px;
   max-width: 1200px;
   margin: auto;
   width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;  
 }
 
 /* Portfolio Items */
