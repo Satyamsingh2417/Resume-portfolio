@@ -563,10 +563,11 @@ img {
 }
 
 /* Portfolio Grid Layout - Fixed 3 Rows */
+
 .portfolio .portfolio-items-group {
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 1fr)); /* Responsive columns */
-  grid-template-rows: repeat(3, 1fr); /* Exactly 3 rows */
+  grid-template-rows: repeat(3, auto); /* Exactly 3 rows */
   gap: 10px;
   max-width: 1200px;
   margin: auto;
@@ -579,9 +580,9 @@ img {
 
 /* Portfolio Images - Adjusted Size */
 .portfolio .portfolio-item img {
-  width: 33%;
-  height: 33%; /* Ensures images fit properly */
-  object-fit: ;
+  width: 100%;
+  height: auto; /* Ensures images fit properly */
+  object-fit: cover ;
   ; /* Prevents distortion */
   transition: transform 0.5s ease;
 }
