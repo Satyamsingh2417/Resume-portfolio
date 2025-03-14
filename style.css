@@ -565,13 +565,13 @@ img {
 /* Portfolio Grid Layout - Fixed 3 Rows */
 .portfolio .portfolio-items-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 3fr)); /* Responsive columns */
+  grid-template-columns: repeat(3, minmax(150px, 1fr)); /* Responsive columns */
   grid-template-rows: repeat(3, 1fr); /* Exactly 3 rows */
   gap: 10px;
   max-width: 1200px;
   margin: auto;
   width: 90%;
-  height: 300px; /* Adjust overall height for 3-row structure */
+  height: 100px; /* Adjust overall height for 3-row structure */
 }
 
 /* Portfolio Items */
