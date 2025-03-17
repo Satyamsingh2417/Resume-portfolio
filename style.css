@@ -535,6 +535,65 @@ img {
   transform: scale(1.05);
 }
 
+
+
+
+/* Filter Box */
+.filter-box {
+display: flex;
+justify-content: flex-end;
+flex-wrap: wrap;
+margin-bottom: 40px;
+gap: 10px;
+}
+
+.filter-item {
+padding: 5px 10px;
+border: 2px solid var(--background-dark-80);
+font-size: var(--font-size-12);
+color: var(--color-white-80);
+transition: var(--transition-default);
+cursor: pointer;
+}
+
+.filter-item:hover {
+border-color: var(--color-white-100);
+}
+
+.filter-item.active {
+border-color: var(--background-orange);
+color: var(--color-white-100);
+}
+
+/* Portfolio Grid Layout - Fixed 3 Rows */
+
+.portfolio .portfolio-items-group {
+display: grid;
+grid-template-columns: repeat(3, minmax(150px, 1fr)); /* Responsive columns */
+grid-template-rows: repeat(3, auto); / Exactly 3 rows /
+gap: 10px;
+max-width: 1200px;
+margin: auto;
+width: 90%;
+height: 100px; / Adjust overall height for 3-row structure */
+}
+
+/* Portfolio Items */
+
+/* Portfolio Images - Adjusted Size */
+.portfolio .portfolio-item img {
+width: 100%;
+height: auto; / Ensures images fit properly /
+object-fit: cover ;
+; / Prevents distortion */
+transition: transform 0.5s ease;
+}
+
+/* Smooth Box Shadow on Hover */
+.portfolio .portfolio-item:hover {
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Filter Box */
 .filter-box {
   display: flex;
@@ -542,24 +601,6 @@ img {
   flex-wrap: wrap;
   margin-bottom: 40px;
   gap: 10px;
-}
-
-.filter-item {
-  padding: 5px 10px;
-  border: 2px solid var(--background-dark-80);
-  font-size: var(--font-size-12);
-  color: var(--color-white-80);
-  transition: var(--transition-default);
-  cursor: pointer;
-}
-
-.filter-item:hover {
-  border-color: var(--color-white-100);
-}
-
-.filter-item.active {
-  border-color: var(--background-orange);
-  color: var(--color-white-100);
 }
 
 /* Portfolio Grid - Fixed 3 Rows, Auto Columns */
