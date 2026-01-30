@@ -1,4 +1,20 @@
 
+.sidebar {
+  flex: 1;
+  padding: 15px;
+}
+
+.ad-box, .bottom-ad {
+  background: #f4f4f4;
+  border: 2px dashed #999;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.bottom-ad {
+  margin: 20px;
+}
 /* Variables */
 
 :root {
